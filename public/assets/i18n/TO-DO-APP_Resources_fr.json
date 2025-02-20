@@ -1,0 +1,10 @@
+{
+  "GLOBAL.APP_NAME": "Liste de tâches Angular",
+  "TODO.APP.TASKS_LOAD_ERROR_MESSAGE": "Échec du chargement des tâches. Veuillez réessayer plus tard.",
+  "TODO.APP.TASKS_SEARCH": "Rechercher des tâches",
+  "TODO.APP.TASKS_DELETE_ALL": "Supprimer toutes les tâches",
+  "TODO.APP.TASKS_LOAD": "Charger %numberOfTasks% tâches",
+  "TODO.APP.TASKS_ADD": "Ajouter une nouvelle tâche",
+  "TODO.APP.TASKS_EDIT": "Modifier la tâche",
+  "TODO.APP.TASKS_REOPEN": "Rouvrir la tâche"
+}

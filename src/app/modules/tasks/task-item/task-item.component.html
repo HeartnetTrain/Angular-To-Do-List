@@ -1,0 +1,25 @@
+<div class="app-task-item__container">
+  <li>
+    <div [class.app-task-item__completed]="task.completed" class="app-task-item__title">
+      <button><span class="material-icons">drag_indicator</span></button>
+      <span>{{ task.name }} </span>
+    </div>
+    <div class="app-task-item__actions">
+
+      <button *ngIf="!task.completed"
+              (click)="select()">
+        <span class="material-icons">check</span>
+      </button>
+
+      <button *ngIf="task.completed"
+              [title]="'TODO.APP.TASKS_REOPEN' | translate"
+              (click)="select()">
+        <span class="material-icons">refresh</span>
+      </button>
+
+      <button (click)="initUpdate()"><span class="material-icons">edit</span></button>
+      <button (click)="delete()"><span class="material-icons">delete</span></button>
+
+    </div>
+  </li>
+</div>

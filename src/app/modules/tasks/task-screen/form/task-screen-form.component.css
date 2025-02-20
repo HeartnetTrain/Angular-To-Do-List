@@ -1,0 +1,14 @@
+/*===============================================================
+                    Add task
+===============================================================*/
+
+.app-task-screen__save-task {
+  padding: 0;
+  align-self: center;
+  background-color: transparent;
+  color: #007BFF;
+}
+
+.app-task-screen__save-task:hover {
+  color: #0056b3;
+}

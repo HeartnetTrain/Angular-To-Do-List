@@ -1,0 +1,6 @@
+<div *ngIf="errorMessage" class="app-error__container">
+  <span>{{errorMessage}}</span>
+  <button (click)="clearError()">
+    <span class="material-icons">close</span>
+  </button>
+</div>

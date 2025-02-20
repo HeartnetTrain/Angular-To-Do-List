@@ -1,0 +1,27 @@
+/*===============================================================
+                    Header
+===============================================================*/
+
+.app-task-screen__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.app-task-screen__header-right {
+  margin-right: 5px;
+}
+
+.app-task-screen__header-right > button:nth-child(1) {
+  background-color: #dc3545;
+}
+
+.app-task-screen__header-right > button:nth-child(2) {
+  background-color: #ffc107;
+}
+
+.app-task-screen__header-left > h1 {
+  color: #333;
+  padding-left: 10px;
+}

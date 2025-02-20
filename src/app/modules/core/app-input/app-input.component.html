@@ -1,0 +1,13 @@
+<div class="app-input__container">
+  <input
+    #inputElement
+    [value]="input?.value"
+    [placeholder]="input?.placeholder | translate"
+    [maxLength]="input?.maxLength"
+    (input)="onInputChange($event)"
+  />
+  <button *ngFor="let button of input?.buttons" [class]="button.buttonClass"
+          (click)="handleButtonAction(button)">
+    <span class="material-icons">{{ button.icon }}</span>
+  </button>
+</div>

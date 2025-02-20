@@ -1,0 +1,11 @@
+<app-input
+  *ngIf="!taskToUpdate"
+  [input]="newTaskInput"
+  (inputValueChange)="newTaskInput.value = $event">
+</app-input>
+
+<app-input
+  *ngIf="taskToUpdate"
+  [input]="updatedTaskInput"
+  (inputValueChange)="updatedTaskInput.value = $event">
+</app-input>

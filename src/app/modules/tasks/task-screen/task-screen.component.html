@@ -1,0 +1,32 @@
+<div *ngIf="!errorMessage" class="app-task-screen__container">
+
+  <!-- Application Header -->
+  <app-task-screen-header></app-task-screen-header>
+
+  <!-- A Form to add and edit tasks -->
+  <app-task-screen-form
+    [taskToUpdate]="taskToUpdate"
+    (addedTask)="addTask($event)"
+    (savedTask)="saveUpdatedTask($event)"
+    (canceledUpdate)="cancelUpdate()">
+  </app-task-screen-form>
+
+  <!-- Filter Tasks -->
+  <app-input [input]="searchInput"
+             (inputValueChange)="onSearchTermChange($event)">
+  </app-input>
+
+  <!-- Tasks List -->
+  <cdk-virtual-scroll-viewport itemSize="50" class="app-task-screen__viewport">
+    <app-task-list
+      [tasks]="filteredTasks"
+      (update)="initTaskToUpdate($event)"
+      (delete)="deleteTask($event)"
+      (select)="selectTask($event)"
+      (reorder)="reorderTasks($event)">
+    </app-task-list>
+  </cdk-virtual-scroll-viewport>
+</div>
+
+<!-- Error container -->
+<app-error *ngIf="errorMessage" [errorMessage]="errorMessage"></app-error>

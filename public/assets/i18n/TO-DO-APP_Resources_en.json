@@ -1,0 +1,10 @@
+{
+  "GLOBAL.APP_NAME": "Angular To-Do List",
+  "TODO.APP.TASKS_LOAD_ERROR_MESSAGE": "Failed to load tasks. Please try again later.",
+  "TODO.APP.TASKS_SEARCH": "Search tasks",
+  "TODO.APP.TASKS_DELETE_ALL": "Delete All Tasks",
+  "TODO.APP.TASKS_LOAD": "Load %numberOfTasks% Tasks",
+  "TODO.APP.TASKS_ADD": "Add a new task",
+  "TODO.APP.TASKS_EDIT": "Edit task",
+  "TODO.APP.TASKS_REOPEN": "Reopen the task"
+}

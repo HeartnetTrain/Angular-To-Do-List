@@ -1,0 +1,18 @@
+.app-error__container {
+  color: red;
+  padding: 10px;
+  border: 1px solid red;
+  background-color: #ffe6e6;
+  margin: 10px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+}
+
+.app-error__container > button {
+  background-color: transparent;
+  border: none;
+  color: red;
+  cursor: pointer;
+}

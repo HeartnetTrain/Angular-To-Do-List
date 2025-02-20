@@ -1,0 +1,11 @@
+<ul class="app-task-list__container" cdkDropList (cdkDropListDropped)="drop($event)">
+  <app-task-item
+    cdkDrag
+    cdkDragBoundary=".cdk-drop-list"
+    *cdkVirtualFor="let task of tasks; let index = index; trackBy: trackElementFunction"
+    [task]="task"
+    (updatedTaskInitialized)="update.emit($event)"
+    (taskDeleted)="delete.emit($event)"
+    (taskSelected)="select.emit($event)">
+  </app-task-item>
+</ul>

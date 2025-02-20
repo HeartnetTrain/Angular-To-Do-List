@@ -1,0 +1,9 @@
+<div class="app-task-screen__header">
+  <div class="app-task-screen__header-left">
+    <h1> {{'GLOBAL.APP_NAME' | translate}}</h1>
+  </div>
+  <div class="app-task-screen__header-right">
+    <button (click)="deleteAllTasks()">{{'TODO.APP.TASKS_DELETE_ALL' | translate}}</button>
+    <button (click)="loadSampleTasks()">{{loadTasksLabel}}</button>
+  </div>
+</div>

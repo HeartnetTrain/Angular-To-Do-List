@@ -1,0 +1,66 @@
+/*===============================================================
+                    Container
+===============================================================*/
+.app-task-item__container {
+  margin-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 1px 5px;
+  border: none;
+}
+
+/*===============================================================
+                    Title
+===============================================================*/
+
+.app-task-item__title {
+  display: flex;
+  align-items: center;
+}
+
+.app-task-item__title button {
+  background-color: transparent;
+  cursor: move;
+}
+
+/*===============================================================
+                    Item
+===============================================================*/
+
+.app-task-item__container > li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  flex-wrap: wrap;
+}
+
+.app-task-item__container > li:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.app-task-item__container .app-task-item__completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+/*===============================================================
+                    Item
+===============================================================*/
+.app-task-item__actions > button {
+  background-color: #28a745;
+}
+
+.app-task-item__actions > button:nth-child(2) {
+  background-color: #ffc107;
+}
+
+.app-task-item__actions > button:nth-child(3) {
+  background-color: #dc3545;
+}
+
+.app-task-item__actions > button:hover {
+  opacity: 0.8;
+}
+

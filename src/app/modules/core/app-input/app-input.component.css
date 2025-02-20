@@ -1,0 +1,14 @@
+.app-input__container {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin: 10px;
+}
+
+.app-input__container > input {
+  /* Ensure the input will always take half of the screen width with some space reserved to the buttons */
+  flex-basis: calc(50% - 80px);
+  max-width: calc(100% - 80px);
+  padding: 8px;
+  font-size: 14px;
+}
